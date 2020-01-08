@@ -241,7 +241,7 @@ Function Remove-UserFromUiPathRole($Token, $UserEmail, $UiPathRoleName, $Tenant,
 }
 
 
-Function PerformSync([string]$rpa_group_name, [string]$syncusername=$("syncuser"), [string]$syncuser_password)
+Function PerformSync([string]$rpa_group_name, [string]$syncusername=, [string]$syncuser_password)
 {
     # Print group name to sync
     Write-Host ("PerformSync on {0}" -f $rpa_group_name)
